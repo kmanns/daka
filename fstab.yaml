@@ -1,0 +1,7 @@
+mountpoints:
+  /:
+    url: https://content.da.live/kmanns/daka/
+    type: markup
+
+folders:
+  /products/: /products/default
