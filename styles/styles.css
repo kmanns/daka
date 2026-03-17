@@ -402,10 +402,98 @@ main > .section:first-of-type {
   }
 }
 
+/* DAKA tactical theme overrides */
+:root {
+  --color-brand-500: #b89552;
+  --color-brand-600: #9d7d42;
+  --color-brand-700: #7d6331;
+  --color-neutral-50: #f2eee6;
+  --color-neutral-100: #e7dece;
+  --color-neutral-200: #3b3428;
+  --color-neutral-300: #534935;
+  --color-neutral-400: #6f6044;
+  --color-neutral-700: #bdb4a4;
+  --color-neutral-800: #e6dfd2;
+  --color-neutral-900: #faf7f1;
+  --background-color: #11100d;
+  --shape-border-radius-1: 0;
+  --shape-border-radius-2: 0;
+  --shape-border-radius-3: 0;
+  --type-base-font-family: "DIN Condensed", "Arial Narrow", "Franklin Gothic Medium", sans-serif;
+  --type-display-1-font: normal normal 700 clamp(4.8rem, 8vw, 7.4rem)/0.95 var(--type-base-font-family);
+  --type-display-2-font: normal normal 700 clamp(3.6rem, 5vw, 5.4rem)/1 var(--type-base-font-family);
+  --type-display-3-font: normal normal 700 clamp(2.8rem, 3.8vw, 3.8rem)/1.05 var(--type-base-font-family);
+  --type-headline-1-font: normal normal 700 2.4rem/1.1 var(--type-base-font-family);
+  --type-headline-2-default-font: normal normal 700 2rem/1.1 var(--type-base-font-family);
+  --type-headline-2-strong-font: normal normal 700 2rem/1.1 var(--type-base-font-family);
+  --type-body-1-default-font: normal normal 400 1.7rem/1.5 "Helvetica Neue", "Segoe UI", sans-serif;
+  --type-body-1-strong-font: normal normal 700 1.7rem/1.5 "Helvetica Neue", "Segoe UI", sans-serif;
+  --type-body-2-default-font: normal normal 400 1.4rem/1.45 "Helvetica Neue", "Segoe UI", sans-serif;
+  --type-body-2-strong-font: normal normal 700 1.4rem/1.45 "Helvetica Neue", "Segoe UI", sans-serif;
+  --type-button-2-font: normal normal 700 1.3rem/1.15 var(--type-base-font-family);
+  --type-button-2-letter-spacing: 0.14em;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgb(184 149 82 / 10%), transparent 30%),
+    linear-gradient(180deg, #161410 0%, var(--background-color) 24%, #0c0b09 100%);
+  color: var(--color-neutral-800);
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  color: var(--color-neutral-900);
+  text-transform: uppercase;
+}
+
+body main > .section > div > h2:first-child {
+  border-bottom: 1px solid rgb(184 149 82 / 35%);
+  font-size: clamp(2.6rem, 3.2vw, 4.2rem);
+  letter-spacing: 0.08em;
+  margin: 0 0 2rem;
+  padding-bottom: 1rem;
+}
+
+main a.button:any-link,
+button.button {
+  border-radius: 0;
+  box-shadow: 0 10px 24px rgb(0 0 0 / 24%);
+  padding: 0.75em 1.4em;
+  text-transform: uppercase;
+}
+
+main a.button.secondary,
+button.button.secondary {
+  background-color: transparent;
+}
+
+body header .nav-wrapper {
+  background-color: rgb(17 16 13 / 94%);
+  border-bottom: 1px solid rgb(184 149 82 / 26%);
+  backdrop-filter: blur(10px);
+}
+
+body footer {
+  background: #0b0a08;
+  border-top: 1px solid rgb(184 149 82 / 26%);
+  color: #d7cfbf;
+}
+
+main .section.light,
+main .section.highlight {
+  background:
+    linear-gradient(180deg, rgb(231 222 206 / 6%), rgb(231 222 206 / 3%)),
+    #171511;
+}
+
 /* section metadata - styles - start */
 main .section.light,
 main .section.highlight {
-  background-color: var(--color-neutral-100);
   margin: 0;
   padding: var(--spacing-xbig) 0;
 }

@@ -5,15 +5,46 @@
 
 .hero {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  display: flex;
+  align-items: flex-end;
+  padding: 48px 24px;
+  min-height: 420px;
+  overflow: hidden;
 }
 
 .hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+  max-width: 12ch;
+  margin: 0;
+  color: var(--color-neutral-900);
+  text-shadow: 0 6px 24px rgb(0 0 0 / 45%);
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgb(10 9 7 / 82%) 0%, rgb(10 9 7 / 58%) 42%, rgb(10 9 7 / 18%) 72%),
+    linear-gradient(180deg, rgb(0 0 0 / 12%) 0%, rgb(0 0 0 / 50%) 100%);
+  z-index: -1;
+}
+
+.hero > div {
+  position: relative;
+  max-width: 52rem;
+  padding: 2.4rem;
+  border-left: 4px solid rgb(184 149 82 / 90%);
+  background: linear-gradient(180deg, rgb(17 16 13 / 70%), rgb(17 16 13 / 44%));
+  box-shadow: 0 20px 60px rgb(0 0 0 / 28%);
+}
+
+.hero p,
+.hero a:not(.button) {
+  color: var(--color-neutral-100);
+}
+
+.hero .button-container {
+  margin-top: var(--spacing-small);
 }
 
 .hero picture {
@@ -32,6 +63,11 @@
 
 @media (min-width: 900px) {
   .hero {
-    padding: 40px 32px;
+    padding: 72px 32px;
+    min-height: 560px;
+  }
+
+  .hero > div {
+    padding: 3.2rem;
   }
 }
