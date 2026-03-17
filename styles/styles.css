@@ -402,20 +402,20 @@ main > .section:first-of-type {
   }
 }
 
-/* DAKA tactical theme overrides */
+/* DAKA white-and-grey theme overrides */
 :root {
-  --color-brand-500: #b89552;
-  --color-brand-600: #9d7d42;
-  --color-brand-700: #7d6331;
-  --color-neutral-50: #f2eee6;
-  --color-neutral-100: #e7dece;
-  --color-neutral-200: #3b3428;
-  --color-neutral-300: #534935;
-  --color-neutral-400: #6f6044;
-  --color-neutral-700: #bdb4a4;
-  --color-neutral-800: #e6dfd2;
-  --color-neutral-900: #faf7f1;
-  --background-color: #11100d;
+  --color-brand-500: #4a4f56;
+  --color-brand-600: #32363c;
+  --color-brand-700: #1f2328;
+  --color-neutral-50: #fff;
+  --color-neutral-100: #f5f5f2;
+  --color-neutral-200: #e8e8e2;
+  --color-neutral-300: #d7d7d0;
+  --color-neutral-400: #babbb2;
+  --color-neutral-700: #64665f;
+  --color-neutral-800: #33363a;
+  --color-neutral-900: #16181b;
+  --background-color: #fff;
   --shape-border-radius-1: 0;
   --shape-border-radius-2: 0;
   --shape-border-radius-3: 0;
@@ -436,8 +436,8 @@ main > .section:first-of-type {
 
 body {
   background:
-    radial-gradient(circle at top, rgb(184 149 82 / 10%), transparent 30%),
-    linear-gradient(180deg, #161410 0%, var(--background-color) 24%, #0c0b09 100%);
+    radial-gradient(circle at top, rgb(74 79 86 / 6%), transparent 24%),
+    linear-gradient(180deg, #fff 0%, #fcfcfa 48%, #f4f4f1 100%);
   color: var(--color-neutral-800);
 }
 
@@ -452,7 +452,7 @@ body h6 {
 }
 
 body main > .section > div > h2:first-child {
-  border-bottom: 1px solid rgb(184 149 82 / 35%);
+  border-bottom: 1px solid rgb(31 35 40 / 16%);
   font-size: clamp(2.6rem, 3.2vw, 4.2rem);
   letter-spacing: 0.08em;
   margin: 0 0 2rem;
@@ -462,7 +462,7 @@ body main > .section > div > h2:first-child {
 main a.button:any-link,
 button.button {
   border-radius: 0;
-  box-shadow: 0 10px 24px rgb(0 0 0 / 24%);
+  box-shadow: 0 10px 24px rgb(15 17 20 / 12%);
   padding: 0.75em 1.4em;
   text-transform: uppercase;
 }
@@ -473,22 +473,22 @@ button.button.secondary {
 }
 
 body header .nav-wrapper {
-  background-color: rgb(17 16 13 / 94%);
-  border-bottom: 1px solid rgb(184 149 82 / 26%);
+  background-color: rgb(255 255 255 / 94%);
+  border-bottom: 1px solid rgb(31 35 40 / 10%);
   backdrop-filter: blur(10px);
 }
 
 body footer {
-  background: #0b0a08;
-  border-top: 1px solid rgb(184 149 82 / 26%);
-  color: #d7cfbf;
+  background: #f1f1ed;
+  border-top: 1px solid rgb(31 35 40 / 10%);
+  color: var(--color-neutral-800);
 }
 
 main .section.light,
 main .section.highlight {
   background:
-    linear-gradient(180deg, rgb(231 222 206 / 6%), rgb(231 222 206 / 3%)),
-    #171511;
+    linear-gradient(180deg, rgb(255 255 255 / 96%), rgb(245 245 242 / 96%)),
+    #f5f5f2;
 }
 
 /* section metadata - styles - start */
